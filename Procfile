@@ -1,0 +1,1 @@
+web: gunicorn justiceV1.wsgi --log-file -
