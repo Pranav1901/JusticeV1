@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-pbl!($bc6=2s(dz&fz2w3!2v%ogu755ll5!^+tf*$+3@iwm*bg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://justicev1.herokuapp.com/','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['justicev1.herokuapp.com','localhost','127.0.0.1']
 
 
 # Application definition
