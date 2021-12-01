@@ -57,6 +57,8 @@ def specialization(request,pk):
 #-----------------DELETE-------------------------
 def deletelawyer(request,pk):
     lawyer = Lawyers.objects.get(id=pk)
+    specialization = LawyerSpecilization.objects.filter(Lawyer_id=pk)
+    specialization.delete()
     lawyer.delete()
     return redirect('/lawyers/all')
 
