@@ -43,6 +43,8 @@ def ncasetype(request,pk):
 @api_view(['GET'])
 def lawyer(request,pk):
     lawyer = Lawyers.objects.get(id=pk)
+    lawyer.noOfViews+=1
+    lawyer.save()
     serializers = allSerailizer(lawyer,many=False)
     return Response(serializers.data)
 

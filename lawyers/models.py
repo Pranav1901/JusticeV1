@@ -9,6 +9,7 @@ class Lawyers(models.Model):
     Email = models.EmailField(max_length=254)
     Location = models.CharField(max_length=100)
     Lawyer_Qualification = models.CharField(max_length=200)
+    noOfViews = models.IntegerField(default=0)
     
     def __str__(self):
         return self.Name
